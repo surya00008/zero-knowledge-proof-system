@@ -1,34 +1,40 @@
 # 🔐 Zero Knowledge Proof Cryptographic System
 
-## Capstone Project - Application of ZKP Cryptographic Algorithm
+### Secure Authentication & Integrity Verification Using Zero Knowledge Proofs
 
-### 📋 Project Overview
+---
 
-This project demonstrates the practical application of **Zero Knowledge Proof (ZKP)** cryptographic algorithms in two real-world use cases:
+## 📋 Project Overview
 
-1. **Secure Authentication** - Prove password knowledge without revealing it
-2. **Digital Forensics** - Verify file integrity without exposing contents
+This project demonstrates a **practical implementation of Zero Knowledge Proof (ZKP)** cryptographic algorithms using a **Schnorr-like protocol**, applied to real-world security use cases.
+
+The system shows how secrets can be **cryptographically proven** without ever being transmitted or stored.
+
+### Implemented Use Cases
+1. **Secure Authentication** — prove password knowledge without revealing it  
+2. **Digital Forensics** — verify file integrity without exposing file contents  
 
 ---
 
 ## 🎯 Problem Statement
 
-### Traditional Authentication Issues:
+### Issues with Traditional Authentication
 - Passwords are transmitted over networks
-- Servers store password hashes that can be leaked
+- Servers store password hashes that may be leaked
 - Man-in-the-middle attacks can capture credentials
-- Data breaches expose user passwords
+- Data breaches expose sensitive secrets
 
-### Our Solution:
-**Zero Knowledge Proof Authentication** - Mathematically prove you know a password WITHOUT ever transmitting it!
+### Proposed Solution
+**Zero Knowledge Proof–based authentication**  
+A cryptographic approach that allows a user to prove knowledge of a secret **without ever revealing the secret itself**.
 
 ---
 
 ## 📐 Mathematical Foundation
 
-### Schnorr-like Protocol Implementation
+### Schnorr-like Zero Knowledge Proof Protocol
 
-This project implements a **Schnorr-like Zero Knowledge Proof** protocol using:
+The implementation is based on a **Schnorr-style ZKP** using the discrete logarithm problem.
 
 ```
 Parameters:
@@ -61,12 +67,12 @@ Parameters:
 
 ### Why This is Zero Knowledge:
 
-| What is Transmitted | What is NEVER Transmitted |
-|---------------------|---------------------------|
-| Commitment (t)      | Password                  |
-| Challenge (c)       | Secret (x)                |
-| Response (s)        | Random nonce (r)          |
-| Public value (y)    | File contents             |
+| Transmitted (Safe) | Never Transmitted|
+|--------------------|------------------|
+| Commitment (t)     | Password         |
+| Challenge (c)      | Secret (x)       |
+| Response (s)       | Random nonce (r) |
+| Public value (y)   | File contents    |
 
 **Security Basis:** Discrete Logarithm Problem - Computing x from y = g^x mod p is computationally infeasible.
 
@@ -194,13 +200,13 @@ The verifier learns NOTHING about the secret from the proof values.
 
 ## 🛠️ Technology Stack
 
-| Component      | Technology        |
-|----------------|-------------------|
-| Language       | Python 3.8+       |
-| Cryptography   | SHA-256, Modular Arithmetic |
-| Protocol       | Schnorr-like ZKP  |
-| Web UI         | Streamlit         |
-| Data Logging   | CSV               |
+| Component    | Technology                  |
+| ------------ | --------------------------- |
+| Language     | Python 3.8+                 |
+| Cryptography | SHA-256, Modular Arithmetic |
+| Protocol     | Schnorr-like ZKP            |
+| Web UI       | Streamlit                   |
+| Logging      | CSV                         |
 
 ---
 
@@ -212,18 +218,10 @@ The verifier learns NOTHING about the secret from the proof values.
 
 ---
 
-## 👨‍💻 Project Details
-
-| Field | Details |
-|-------|---------|
-| **Project Title** | Application of Zero Knowledge Proof Cryptographic Algorithm |
-| **Course** | Capstone Project - Final Semester |
-| **Review** | Review-1 (January 2026) |
-| **Completion** | 90% |
 
 ---
 
-## ✅ Features Implemented
+## ✅ Features
 
 - [x] Schnorr-like ZKP Protocol
 - [x] Secure Password Authentication
