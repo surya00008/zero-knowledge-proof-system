@@ -1,0 +1,3 @@
+﻿timestamp,use_case,operation,time_seconds,status
+2026-01-18 14:29:27,banking,proof_generation,0.000355,VERIFIED
+2026-01-18 14:29:27,banking,verification,0.000330,VERIFIED

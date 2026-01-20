@@ -1,0 +1,14 @@
+This is a sample evidence file for ZKP demonstration.
+
+CASE ID: DEMO-2026-001
+DATE: January 18, 2026
+CLASSIFICATION: Sample Evidence
+
+This file represents authentic digital evidence.
+Any modification to this file will be detected by the
+Zero Knowledge Proof file integrity verification system.
+
+The ZKP system proves possession of this file WITHOUT
+revealing its contents to the verifier.
+
+=== END OF EVIDENCE ===

@@ -1,0 +1,10 @@
+This is a MODIFIED evidence file.
+
+CASE ID: DEMO-2026-001
+DATE: January 18, 2026
+CLASSIFICATION: TAMPERED Evidence
+
+WARNING: This file has been modified!
+The ZKP verification will FAIL for this file.
+
+=== TAMPERED FILE ===

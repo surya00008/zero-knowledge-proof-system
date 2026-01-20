@@ -1,0 +1,18 @@
+# Zero Knowledge Proof Capstone Project
+# Python Dependencies
+
+# Streamlit for web UI
+streamlit>=1.28.0
+
+# Pandas for data analysis
+pandas>=2.0.0
+
+# No other external dependencies required
+# Core modules used (built-in Python):
+# - hashlib (SHA-256 hashing)
+# - secrets (cryptographic random numbers)
+# - time (performance measurement)
+# - csv (data logging)
+# - os, sys (file operations)
+# - getpass (hidden password input)
+# - tempfile (test file creation)
