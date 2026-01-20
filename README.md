@@ -234,4 +234,4 @@ The verifier learns NOTHING about the secret from the proof values.
 
 ---
 
-*© 2026 Capstone Project - Zero Knowledge Proof System*
+*© 2026 Surya - Zero Knowledge Proof System*
